@@ -1,9 +1,10 @@
 ---
-name: 'Bug'
-about: "Report a problem if something is not working as expected"
+name: Bug
+about: Report a problem if something is not working as expected
 title: ''
-labels: 'type: bug'
+labels: bug
 assignees: ''
+
 ---
 
 Expected behaviour:
