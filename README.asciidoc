@@ -5,7 +5,8 @@ image:https://img.shields.io/github/license/devonfw/ide.svg?label=License["Apach
 https://devonfw.com[devonfw] is a standard development platform and consists of many repositories.
 This repository is for general cross-cutting content.
 
-In the link:documentation[documentation] folder, you will find general documentation that applies to devonfw as a whole including all stackes (Java, Angular, .NET, etc.).
+In the link:documentation[documentation] folder, you will find general documentation that applies to devonfw as a whole including all stacks (https://github.com/devonfw/devon4j[Java], https://github.com/devonfw/devon4ng[Angular], https://github.com/devonfw/devon4net[.NET], https://github.com/devonfw/devon4x[Xamarin], https://github.com/devonfw/devon4node[node.js], etc.).
+
 Examples are:
 
 * link:documentation/code-of-conduct.asciidoc[code of conduct]
