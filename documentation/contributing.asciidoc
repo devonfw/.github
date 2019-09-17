@@ -7,6 +7,7 @@ https://devonfm.com[devonfw] is truly free and open.
 We are looking forward to your contribution and are more than happy to receive your feedback and improvements to code and documentation.
 This page describes the few conventions to follow.
 Please note that this is an open and international project and all content has to be in English language.
+Also read our link:code_of_conduct.asciidoc[code of conduct].
 
 == Using github
 We are using github.com as social coding platform. Hence, we follow the principles of github to deal with changes:
