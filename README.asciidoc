@@ -1,0 +1,13 @@
+= devonfw
+
+image:https://img.shields.io/github/license/devonfw/ide.svg?label=License["Apache License, Version 2.0",link=https://github.com/devonfw/ide/blob/master/LICENSE]
+
+https://devonfw.com[devonfw] is a standard development platform and consists of many repositories.
+This repository is for general cross-cutting content.
+
+In the link:documentation[documentation] folder, you will find general documentation that applies to devonfw as a whole including all stackes (Java, Angular, .NET, etc.).
+Examples are:
+
+* link:documentation/code-of-conduct.asciidoc[code of conduct]
+* link:documentation/contributing.asciidoc[contributing]
+* link:documentation/key-principles.asciidoc[key principles]
