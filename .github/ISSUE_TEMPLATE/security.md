@@ -1,0 +1,12 @@
+---
+name: Security
+about: Vulnerability such as a CVE
+title: ''
+labels: security
+assignees: ''
+
+---
+
+Criticality:
+
+CVE-Link or steps to reproduce:
