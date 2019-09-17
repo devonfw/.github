@@ -1,60 +1,54 @@
-:toc: macro
-toc::[]
+# Contributing
 
-= Contributing
-
-https://devonfm.com[devonfw] is truly free and open. 
+[devonfw](https://devonfm.com) is truly free and open. 
 We are looking forward to your contribution and are more than happy to receive your feedback and improvements to code and documentation.
 This page describes the few conventions to follow.
 Please note that this is an open and international project and all content has to be in English language.
 Also read our link:code-of-conduct.asciidoc[code of conduct].
 
-== Using github
-We are using github.com as social coding platform. Hence, we follow the principles of github to deal with changes:
+## Using github
+We are using [github.com](https://github.com) as social coding platform. Hence, we follow the principles of github to deal with changes:
 
-=== Account
-In case you do not have an account please first https://github.com/join[join github]. 
+### Account
+In case you do not have an account please first [join github](https://github.com/join). 
 If you have a CORP username use it also as GitHub username. 
 If possible and suitable also provide your real name in your profile.
-Now, that you are logged into github.com you are ready to go.
+Now, that you are logged into [github.com](https://github.com) you are ready to go.
 
-=== Organizations
+### Organizations
 For devonfw we have the following organizations on github:
 
-* link:https://github.com/devonfw/[*devonfw*]
-+
-The official _devonfw Platform_ organization.
-* link:https://github.com/devonfw-forge[*devonfw-forge*]
-+
-The organization used for work on incubators and other research projects.
+* [*devonfw*](link:https://github.com/devonfw/) - 
+the official _devonfw Platform_ organization.
+* [*devonfw-forge*](link:https://github.com/devonfw-forge) - the organization used for work on incubators and other research projects.
 New projects start here and in case they evolve properly and get mature, they are moved to the official devonfw organization.
 
-=== Repositories 
+### Repositories 
 Within the organizations we have many different repositories.
 In case you want to give feedback or provide contributions you need to know the corresponding repository.
 
 The major technology stacks have their own repository carrying the prefix `devon4` followed by a shortcut for their stack or programming language:
 
-* https://github.com/devonfw/devon4j[devon4j] for https://java.com/[Java]
-* https://github.com/devonfw/devon4ng[devon4ng] for https://angular.io/[Angular]
-* https://github.com/devonfw/devon4net[devon4net] for https://dotnet.microsoft.com/[.NET]
-* https://github.com/devonfw/devon4x[devon4x] for https://dotnet.microsoft.com/apps/xamarin[Xamarin]
-* https://github.com/devonfw/devon4node[devon4node] for https://nodejs.org/[node.js]
+* [devon4j](https://github.com/devonfw/devon4j) for [Java](https://java.com/)
+* [devon4ng](https://github.com/devonfw/devon4ng) for [Angular](https://angular.io/)
+* [devon4net](https://github.com/devonfw/devon4net) for [.NET](https://dotnet.microsoft.com/)
+* [devon4x](https://github.com/devonfw/devon4x) for [Xamarin](https://dotnet.microsoft.com/apps/xamarin)
+* [devon4node](https://github.com/devonfw/devon4node) for [node.js](https://nodejs.org/)
 
 Tools we provide typically have a repository named like the tool they provide (omitting prefixes like `devon[fw]`):
 
-* https://github.com/devonfw/tools-cobigen[CobiGen] (incremental code generator)
-* https://github.com/devonfw/ide[devon-ide] (development environment)
-* https://github.com/devonfw/sonar-devon-plugin[sonar-devon-plugin] (SonarQube plugin for architecture validation)
-* https://github.com/devonfw/cicdgen[CICDgen] (generator for CI/CD)
-* https://github.com/devonfw/devon-docgen[docgen] (generator for AsciiDoc to PDF and other formats)
-* https://github.com/devonfw-forge/solicitor[solicitor] (License compatibility checker)
-* https://github.com/devonfw/asciidoc-link-checker[asciidoc-link-checker]
+* [CobiGen](https://github.com/devonfw/tools-cobigen) (incremental code generator)
+* [devon-ide](https://github.com/devonfw/ide) (development environment)
+* [sonar-devon-plugin](https://github.com/devonfw/sonar-devon-plugin) (SonarQube plugin for architecture validation)
+* [CICDgen](https://github.com/devonfw/cicdgen) (generator for CI/CD)
+* [docgen](https://github.com/devonfw/devon-docgen) (generator for AsciiDoc to PDF and other formats)
+* [solicitor](https://github.com/devonfw-forge/solicitor) (License compatibility checker)
+* [asciidoc-link-checker](https://github.com/devonfw/asciidoc-link-checker)
 
 There is much more to discover.
 Browse our organizations to find out.
 
-=== Trivial changes
+### Trivial changes
 Please note that for trivial changes like a typo in the documentation you do not need to follow a complex process. Please do the following:
 
 * Just browse to the file online on github
@@ -66,7 +60,7 @@ Please note that for trivial changes like a typo in the documentation you do not
 * Now fill summary and description and click on the green `Create pull request` button.
 * That is all. Thank you very much. For details about pull requests see below.
 
-=== Issues
+### Issues
 We are working issue-based so check if there is already an issue in our tracker for the task you want to work.
 Otherwise first create a new issue for it (e.g. a bug report or a feature request).
 
@@ -77,12 +71,12 @@ and ensure that there is a common understanding of what and potentially even how
 You surely do not want to invest your valuable work and time into something that will later be rejected by the community.
 When you have been assigned to the issue (see `Assignees` on the right) you are sure that nobody else will work on the same issue in parallel and ready to go.
 
-=== Branches
+### Branches
 Typically the latest development takes place on the `develop` branch.
 In case there is no such branch it will be the `master` branch.
 If you plan to contribute a bugfix, please check if there is a maintenance branch for the corresponding release (e.g. if you found a bug in version 3.4.5 and a branch `develop-3.4.x` exists this should be the baseline for your work).
 
-=== Forking
+### Forking
 The github.com platform supports a wonderful feature to https://help.github.com/articles/fork-a-repo/[fork a repository].
 Make use to create your private copy where you experiment and prepare your contribution in an isolated environment:
 
@@ -93,14 +87,14 @@ Make use to create your private copy where you experiment and prepare your contr
 * From there create and checkout a new feature-branch (named `feature/«issue-id»-«feature-keywords»`)
 * Start your work on this new feature-branch.
 
-=== Code Changes
+### Code Changes
 Before you start with your code changes, please check the following conventions:
 
 * For each programming language we have a stack repository (see above) containing documentation about the coding conventions (example: https://github.com/devonfw/devon4j/blob/develop/documentation/coding-conventions.asciidoc[Java]). Please read and follow this conventions before doing (bigger) changes.
 * Use https://github.com/devonfw/ide/blob/master/documentation/Home.asciidoc[devon-ide] to setup your development environment and get code formatters, etc. configured properly as we do not like "diff-wars" because of inconsistent formatter settings.
 * Thank you, happy coding!
 
-=== Documentation Changes
+### Documentation Changes
 Before you start with your documentation changes, please check the following conventions:
 
 * Documentation will always be found in the `documentation` folder of the root of repository.
@@ -109,37 +103,39 @@ Before you start with your documentation changes, please check the following con
 * Common prefixes help to categorize documentation files: `tutorial-` is used for step-by-step instructions, `guide-` is used for guidelines on a particular aspect, `coding-` is for specific conventions or details about source-code, `alternative-` is for less official options that are not recommended as first class citizen but to still share knowledge for people using that option, `decision-` is for rationales why a complex (technology) descition was taken.
 * Please read and follow our https://github.com/devonfw/devon-docgen/#guidelines[documentation guidelines].
 
-=== Testing changes
+### Testing changes
 To test your changes all you need to do is run the following command:
-[source]
+```
 devon build
+```
 
 If the build failed, you need to rework your changes.
 
-=== Comitting Changes
+### Comitting Changes
 Always commit your changes in small logical units associated with a issue (see above section) using the commit message format:
-[source]
+```
 #«issue-id»: «describe your change»
+```
 Then github will automatically link the commit in the issue. 
 
 Example:
-[source]
+```
 #1: added REST service for tablemanagement
-
+```
 In case you worked on an issue from a different repository (e.g. change in `ide-settings` due to issue in `ide`) we use this commit message format:
-[source]
+```
 «organization»/«repository»#«issue-id»: «describe your change»
-
+```
 Example:
-[source]
+```
 devonfw/devon4j#1: added REST service for tablemanagement
-
-=== Pushing Changes
+```
+### Pushing Changes
 To make your changes public you need to push them.
 If you are doing this for the first time since you started your feature branch, you also need to publish that branch (`git push -u origin feature/«issue-id»-«feature-keywords»`).
 After that a `git push` is sufficient.
 
-=== Definition of Done
+### Definition of Done
 To complete your changes ensure the following aspects:
 
 * You have tested your changes and the build succeeds
@@ -150,8 +146,8 @@ To complete your changes ensure the following aspects:
 Do not worry, we will assist you in case you are unsure or miss something out.
 However, you make your and our life easier, if you follow this Definition of Done (DoD) before providing your pull-request.
 
-=== Pull-Request
-Once you have completed your changes and DoD, you can finally https://help.github.com/en/articles/creating-a-pull-request[create] a https://help.github.com/en/articles/about-pull-requests[pull-request] (PR).
+### Pull-Request
+Once you have completed your changes and DoD, you can finally [create](https://help.github.com/en/articles/creating-a-pull-request) a [pull-request](https://help.github.com/en/articles/about-pull-requests) (PR).
 
 Please ensure the following aspects:
 
@@ -177,4 +173,4 @@ If you do not plan to put any further work into your PR before it is completed a
 We might find resources to get the PR done for you if it is already valuable.
 In case you should not get feedback for weeks, do not hesitate to ask the community.
 
-NOTE: If one (typically the reviewer) has to change the base branch (because the wrong develop branch was used, see above) onto which the changes will be merged, one can do the same by following the instructions at https://github.com/blog/2224-change-the-base-branch-of-a-pull-request/[here].
+NOTE: If one (typically the reviewer) has to change the base branch (because the wrong develop branch was used, see above) onto which the changes will be merged, one can do the same by following the instructions at [here](https://github.com/blog/2224-change-the-base-branch-of-a-pull-request/).
