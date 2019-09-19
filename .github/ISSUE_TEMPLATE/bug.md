@@ -25,5 +25,6 @@ As a < type of user >, I want < some goal > so that < some reason >
 
 
 ### Affected version:
-OS: Windows/Linux/Mac?
-Browser: Chrome/Firefox/Safari?
+
+* OS: Windows/Linux/Mac?
+* Browser: Chrome/Firefox/Safari?
