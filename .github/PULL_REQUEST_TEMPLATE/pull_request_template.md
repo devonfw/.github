@@ -1,2 +1,5 @@
-* Fix of issue #
+**Adresses/Fixes** #<ISSUENO>.
 
+**Implements**
+
+* 
