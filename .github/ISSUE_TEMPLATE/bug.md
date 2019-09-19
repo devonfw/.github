@@ -7,13 +7,23 @@ assignees: ''
 
 ---
 
-Expected behaviour:
+### Expected behavior
 
-Actual behaviour:
+As a < type of user >, I want < some goal > so that < some reason >
 
-Steps to reproduce:
+### Actual behavior
 
-Comments:
 
-Affected version:
-OS: Windows/Linux/Mac
+### Steps to reproduce (bug) / Use Case of feature request (enhancement)
+
+1. 
+
+### Related/Dependent Issues
+
+
+### Comments/Hints:
+
+
+### Affected version:
+OS: Windows/Linux/Mac?
+Browser: Chrome/Firefox/Safari?
