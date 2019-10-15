@@ -3,7 +3,7 @@ toc::[]
 
 = Contributing
 
-https://devonfm.com[devonfw] is truly free and open. 
+https://devonfw.com[devonfw] is truly free and open. 
 We are looking forward to your contribution and are more than happy to receive your feedback and improvements to code and documentation.
 This page describes the few conventions to follow.
 Please note that this is an open and international project and all content has to be in English language.
