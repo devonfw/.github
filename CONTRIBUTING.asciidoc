@@ -45,7 +45,7 @@ Tools we provide typically have a repository named like the tool they provide (o
 
 * https://github.com/devonfw/tools-cobigen[CobiGen] (incremental code generator)
 * https://github.com/devonfw/ide[devon-ide] (development environment)
-* https://github.com/devonfw/sonar-devon-plugin[sonar-devon-plugin] (SonarQube plugin for architecture validation)
+* https://github.com/devonfw/sonar-devon4j-plugin[sonar-devon4j-plugin] (SonarQube plugin for architecture validation)
 * https://github.com/devonfw/cicdgen[CICDgen] (generator for CI/CD)
 * https://github.com/devonfw/devon-docgen[docgen] (generator for AsciiDoc to PDF and other formats)
 * https://github.com/devonfw-forge/solicitor[solicitor] (License compatibility checker)
