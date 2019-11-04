@@ -1,0 +1,4 @@
+# Support
+
+We strive to support all community members and users of devonfw as best as we can, weather that be in their efforts to contribute to the framework directly, or to develop applications based on the framework.  
+If you have any questions about these topics, please don't hesitate to contact us via e-mail at <icsddevonfwsupport.apps2@capgemini.com>.
