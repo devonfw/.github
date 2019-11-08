@@ -9,4 +9,4 @@ The devonfw team is commited to keep its projects and – by extension – the u
 
 Although this covers most vulnerabilities introduced by external or third-party dependencies, there is still a chance that flaws in the code of our framework components inadvertently introduce other https://cve.mitre.org/about/faqs.html#what_is_vulnerability[vulnerabilities] or https://cve.mitre.org/about/faqs.html#what_is_exposure[exposures].
 
-If you suspect to have found such an issue, we implore you to directly contact our support team at <icsddevonfwsupport.apps2@capgemini.com>. In less severe cases you may open a new issue report in the affected repository. If applicable, please provide the related https://cve.mitre.org/about/faqs.html#what_is_cve_id[CVE identifier(s)] in your report.
+If you suspect to have found such an issue, we implore you to directly contact our support team at icsddevonfwsupport.apps2@capgemini.com. In less severe cases you may open a new issue report in the affected repository. If applicable, please provide the related https://cve.mitre.org/about/faqs.html#what_is_cve_id[CVE identifier(s)] in your report.
