@@ -1,5 +1,10 @@
 :toc: macro
 toc::[]
+:idprefix:
+:idseparator: -
+ifdef::env-github[]
+:note-caption: :information_source:
+endif::[]
 
 = Contributing
 
