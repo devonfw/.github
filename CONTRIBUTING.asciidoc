@@ -14,17 +14,17 @@ This page describes the few conventions to follow.
 Please note that this is an open and international project and all content has to be in English language.
 Also read our link:code-of-conduct.asciidoc[code of conduct].
 
-== Using github
-We are using github.com as social coding platform. Hence, we follow the principles of github to deal with changes:
+== Using GitHub
+We are using GitHub as a social coding platform. Hence, we follow the principles of GitHub to deal with changes:
 
 === Account
-In case you do not have an account please first https://github.com/join[join github]. 
+In case you do not have an account please first https://github.com/join[join GitHub]. 
 If you have a CORP username use it also as GitHub username. 
 If possible and suitable also provide your real name in your profile.
-Now, that you are logged into github.com you are ready to go.
+Now, that you are logged into GitHub you are ready to go.
 
 === Organizations
-For devonfw we have the following organizations on github:
+For devonfw we have the following organizations on GitHub:
 
 * link:https://github.com/devonfw/[*devonfw*]
 +
@@ -49,27 +49,27 @@ The major technology stacks have their own repository carrying the prefix `devon
 Tools we provide typically have a repository named like the tool they provide (omitting prefixes like `devon[fw]`):
 
 * https://github.com/devonfw/tools-cobigen[CobiGen] (incremental code generator)
-* https://github.com/devonfw/ide[devon-ide] (development environment)
+* https://github.com/devonfw/ide[devonfw IDE] (development environment)
 * https://github.com/devonfw/sonar-devon4j-plugin[sonar-devon4j-plugin] (SonarQube plugin for architecture validation)
 * https://github.com/devonfw/cicdgen[CICDgen] (generator for CI/CD)
-* https://github.com/devonfw/devon-docgen[docgen] (generator for AsciiDoc to PDF and other formats)
-* https://github.com/devonfw-forge/solicitor[solicitor] (License compatibility checker)
+* https://github.com/devonfw/devon-docgen[DocGen] (generator for AsciiDoc to PDF and other formats)
+* https://github.com/devonfw-forge/solicitor[Solicitor] (License compatibility checker)
 * https://github.com/devonfw/asciidoc-link-checker[asciidoc-link-checker]
 
 There is much more to discover.
 Browse our organizations to find out.
 
-=== Trivial changes
+=== Trivial Changes
 Please note that for trivial changes like a typo in the documentation you do not need to follow a complex process. Please do the following:
 
-* Just browse to the file online on github
-* Click on the small pencil icon on the top right of the file content
-* Do the proposed changes
-* If available (when editing documentation) verify your change by switching to the `Preview` tab on the top.
+* Just browse to the file online on GitHub.
+* Click on the small pencil icon on the top right of the file content.
+* Make the required changes.
+* When editing documentation, verify your change by switching to the `Preview` tab at the top.
 * When your change is complete, select `Create a new branch for this commit and start a pull request` at the bottom.
 * Comitt your change by clicking the green `Propose file change` button at the bottom.
 * Now fill summary and description and click on the green `Create pull request` button.
-* That is all. Thank you very much. For details about pull requests see below.
+* That is all. Thank you very much! For details about pull requests read <<Pull Requests, here>>.
 
 === Issues
 We are working issue-based so check if there is already an issue in our tracker for the task you want to work.
@@ -92,16 +92,25 @@ The github.com platform supports a wonderful feature to https://help.github.com/
 Make use to create your private copy where you experiment and prepare your contribution in an isolated environment:
 
 * Visit the original repository you want to contribute to.
-* Click on the the `Fork` button at the top right. If asked for a destination choose your personal github account.
+* Click on the the `Fork` button at the top right. If asked for a destination choose your personal GitHub account.
 * Clone this fork with a git-client to your local machine.
-* Checkout the branch to use as baseline (see above section)
-* From there create and checkout a new feature-branch (named `feature/«issue-id»-«feature-keywords»`)
-* Start your work on this new feature-branch.
+* Checkout the branch to use as baseline (see above section).
+* From there create and checkout a new feature branch (named `feature/«issue-id»-«feature-keywords»`)
+* Start your work on this new feature branch.
+
+Sometimes, when working on your fork, there will be changes made to the original repository, which you might want to incorporate into your fork's master branch. To do this, you can https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork[sync your fork]:
+
+* Add the remote URL of the original repo to your list of remotes: `git remote add upstream «remote-url»`
+* Fetch the changes from the upstream remote: `git fetch upstream`
+* Check out your fork's master branch: `git checkout master` (assuming you're working on a feature branch)
+* Merge the changes from upstream/master into your fork's master branch: `git merge upstream/master`
+* This brings your fork's master branch into sync with the original repository without losing changes on your local feature branch.
+* Switch back to your feature branch to continue work: `git checkout «feature-branch»`
 
 === Code Changes
 Before you start with your code changes, please check the following conventions:
 
-* For each programming language we have a stack repository (see above) containing documentation about the coding conventions (example: https://github.com/devonfw/devon4j/blob/develop/documentation/coding-conventions.asciidoc[Java]). Please read and follow this conventions before doing (bigger) changes.
+* For each programming language we have a stack repository (see <<Repositories>>) containing documentation about the coding conventions (example: https://github.com/devonfw/devon4j/blob/develop/documentation/coding-conventions.asciidoc[Java]). Please read and follow this conventions before doing (bigger) changes.
 * Use https://github.com/devonfw/ide/blob/master/documentation/Home.asciidoc[devon-ide] to setup your development environment and get code formatters, etc. configured properly as we do not like "diff-wars" because of inconsistent formatter settings.
 * Thank you, happy coding!
 
@@ -114,7 +123,7 @@ Before you start with your documentation changes, please check the following con
 * Common prefixes help to categorize documentation files: `tutorial-` is used for step-by-step instructions, `guide-` is used for guidelines on a particular aspect, `coding-` is for specific conventions or details about source-code, `alternative-` is for less official options that are not recommended as first class citizen but to still share knowledge for people using that option, `decision-` is for rationales why a complex (technology) descition was taken.
 * Please read and follow our https://github.com/devonfw/devon-docgen/#guidelines[documentation guidelines].
 
-=== Testing changes
+=== Testing Changes
 To test your changes all you need to do is run the following command:
 [source]
 devon build
@@ -122,10 +131,10 @@ devon build
 If the build failed, you need to rework your changes.
 
 === Comitting Changes
-Always commit your changes in small logical units associated with a issue (see above section) using the commit message format:
+Always commit your changes in small logical units associated with an issue (see above section) using the commit message format:
 [source]
 #«issue-id»: «describe your change»
-Then github will automatically link the commit in the issue. 
+Then GitHub will automatically link the commit in the issue. 
 
 Example:
 [source]
@@ -153,31 +162,34 @@ To complete your changes ensure the following aspects:
 * For new features you have added automated unit tests
 
 Do not worry, we will assist you in case you are unsure or miss something out.
-However, you make your and our life easier, if you follow this Definition of Done (DoD) before providing your pull-request.
+However, you make your and our life easier, if you follow this Definition of Done (DoD) before providing your pull request.
 
-=== Pull-Request
-Once you have completed your changes and DoD, you can finally https://help.github.com/en/articles/creating-a-pull-request[create] a https://help.github.com/en/articles/about-pull-requests[pull-request] (PR).
+=== Pull Requests
+Once you have completed your changes and DoD, you can finally https://help.github.com/en/articles/creating-a-pull-request[create] a https://help.github.com/en/articles/about-pull-requests[pull request] (PR).
 
 Please ensure the following aspects:
 
-* Follow the same conventions as for commit messages (see above) also for the title of the pull-request
-* In case you are providing a https://help.github.com/en/articles/about-pull-requests[PR] that is not yet ready for merging, please prefix the title with `WIP:`. This can be helpful to get feedback from https://travis-ci.com[travis] or start early discussions on complex changes. Once you reached a state ready to be merged, simple edit the title and remove the `WIP:` prefix.
-* Also add the issue(s) to the description of the pull-request (e.g. `fixes #«issue-id»`).
-* Finally, click on the green `Create Pull Request` button.
+* When selecting a title for your pull request, follow the same conventions that apply to <<Comitting Changes, commit messages>>.
+* Also add the related issue(s) to the description of the pull request (e.g. `fixes #«issue-id»`).
+* If you are providing a PR that is not yet ready for merging, please use GitHub's https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests#draft-pull-requests[draft pull request] feature:
+** Expand the drop-down menu of the green `Create Pull Request` button and select `Create Draft Pull Request`
+** You can make further code changes to your PR by pushing commits to the corresponding feature branch.
+** When you're ready to get feedback on your PR, click the `Ready for review` button.
+* If you are providing a PR that is ready for merging, click on the green `Create Pull Request` button.
 
-Your pull request will automatically be checked if it ...
+Your pull request will automatically be checked for these requirements:
 
-* can be merged without conflicts
-* builds correctly (no compile or test errors)
+* Can be merged without conflicts.
+* Builds correctly (no compile or test errors).
 * https://github.com/devonfw-forge/devon-guide/wiki/cookbook-cla[CLA] has been signed. If you contribute for the first time, you need to https://github.com/devonfw-forge/devon-guide/wiki/cookbook-cla[sign the CLA] once.
 
 Please ensure to do the required tasks and reworks unless all checks are satisfied.
 From here a reviewer should take over and give feedback.
 In the best case, your contribution gets merged and everything is completed.
-You might also get review feedback and are request for changes.
+You might also get review feedback and a request for changes.
 In that case walk through the review feedback and try to resolve it.
-Once, you push your new commits, the PR gets updated automatically and all checks will verify again.
-Also github will automatically make resolved review comments as outdated.
+Once you push your new commits, the PR gets updated automatically and all checks will verify again.
+Also GitHub will automatically make resolved review comments as outdated.
 If you do not plan to put any further work into your PR before it is completed and merge, please let us know by writing an according comment.
 We might find resources to get the PR done for you if it is already valuable.
 In case you should not get feedback for weeks, do not hesitate to ask the community.
