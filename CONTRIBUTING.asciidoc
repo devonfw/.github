@@ -49,10 +49,10 @@ The major technology stacks have their own repository carrying the prefix `devon
 Tools we provide typically have a repository named like the tool they provide (omitting prefixes like `devon[fw]`):
 
 * https://github.com/devonfw/tools-cobigen[CobiGen] (incremental code generator)
-* https://github.com/devonfw/ide[devonfw IDE] (development environment)
+* https://github.com/devonfw/ide[devonfw-ide] (development environment)
 * https://github.com/devonfw/sonar-devon4j-plugin[sonar-devon4j-plugin] (SonarQube plugin for architecture validation)
 * https://github.com/devonfw/cicdgen[CICDgen] (generator for CI/CD)
-* https://github.com/devonfw/devon-docgen[DocGen] (generator for AsciiDoc to PDF and other formats)
+* https://github.com/devonfw/docgen[DocGen] (generator for AsciiDoc to PDF and other formats)
 * https://github.com/devonfw-forge/solicitor[Solicitor] (License compatibility checker)
 * https://github.com/devonfw/asciidoc-link-checker[asciidoc-link-checker]
 
@@ -69,7 +69,7 @@ Please note that for trivial changes like a typo in the documentation you do not
 * When your change is complete, select `Create a new branch for this commit and start a pull request` at the bottom.
 * Comit your change by clicking the green `Propose file change` button at the bottom.
 * Now fill summary and description and click on the green `Create pull request` button.
-* That is all. Thank you very much! For details about pull requests read <<Pull Requests, here>>.
+* That is all. Thank you very much! For details about pull requests read xref:Pull Requests[here].
 
 === Issues
 We are working issue-based, so check if there is already an issue in our tracker for the task you want to work.
@@ -110,7 +110,7 @@ Sometimes, when working on your fork, there will be changes made to the original
 === Code Changes
 Before you start with your code changes, please check the following conventions:
 
-* For each programming language we have a stack repository (see <<Repositories>>) containing documentation about the coding conventions (example: https://github.com/devonfw/devon4j/blob/develop/documentation/coding-conventions.asciidoc[Java]). Please read and follow these conventions before making (bigger) changes.
+* For each programming language we have a stack repository (see xref:Repositories[repositories]) containing documentation about the coding conventions (example: https://github.com/devonfw/devon4j/blob/develop/documentation/coding-conventions.asciidoc[Java]). Please read and follow these conventions before making (bigger) changes.
 * Use https://github.com/devonfw/ide/blob/master/documentation/Home.asciidoc[devon-ide] to setup your development environment and get code formatters, etc. configured properly as we do not like "diff-wars" because of inconsistent formatter settings.
 * Thank you, happy coding!
 
@@ -169,7 +169,7 @@ Once you have completed your changes and DoD, you can finally https://help.githu
 
 Please ensure the following aspects:
 
-* When selecting a title for your pull request, follow the same conventions that apply to <<Committing Changes, commit messages>>.
+* When selecting a title for your pull request, follow the same conventions that apply to xref:Committing Changes[commit messages].
 * Also add the related issue(s) to the description of the pull request (e.g. `fixes #«issue-id»`).
 * If you are providing a PR that is not yet ready for merging, please use GitHub's https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests#draft-pull-requests[draft pull request] feature:
 ** Expand the drop-down menu of the green `Create Pull Request` button and select `Create Draft Pull Request`
