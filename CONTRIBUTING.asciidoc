@@ -71,6 +71,8 @@ Please note that for trivial changes like a typo in the documentation you do not
 * Now fill summary and description and click on the green `Create pull request` button.
 * That is all. Thank you very much! For details about pull requests read xref:pull-requests[here].
 
+For non-trivial changes please read on.
+
 === Issues
 We are working issue-based, so check if there is already an issue in our tracker for the task you want to work.
 Otherwise first create a new issue for it (e.g. a bug report or a feature request).
@@ -80,12 +82,11 @@ please assure via communication in that issue (comments, assigned user, etc.) th
 Especially in case of more complex issues, please get sure not to miss out such consensus with the community 
 and ensure that there is a common understanding of what and potentially even how to do it.
 You surely do not want to invest your valuable work and time into something that will later be rejected by the community.
-When you have been assigned to the issue (see `Assignees` on the right) you are sure that nobody else will work on the same issue in parallel and ready to go.
+When you have been assigned to the issue (see `Assignees` on the right) you are sure that nobody else will work on the same issue in parallel and you are ready to go.
 
 === Branches
-Typically the latest development takes place on the `develop` branch.
-In case there is no such branch it will be the `master` branch.
-If you plan to contribute a bugfix, please check if there is a maintenance branch for the corresponding release (e.g. if you found a bug in version 3.4.5 and a branch `develop-3.4.x` exists, this should be the baseline for your work).
+Typically the latest development takes place on the `master` branch (in case there is a `develop` branch instead, use that one).
+However, all changes are consequently done via feature-branches and pull-requests (see next sections).
 
 === Forking
 The github.com platform supports a wonderful feature to https://help.github.com/articles/fork-a-repo/[fork a repository].
