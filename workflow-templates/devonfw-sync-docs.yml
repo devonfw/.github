@@ -1,3 +1,4 @@
+name: Devonfw CI for doc sync
 env:
   REPO_CONSOLIDATE: "devonfw-guide"
   BUILD_USER: ${{ secrets.BUILD_USER }}
