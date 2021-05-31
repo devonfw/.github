@@ -1,6 +1,6 @@
 {
-    "name": "devonfw Workflow",
-    "description": "Devonfw sync docs CI workflow template.",
+    "name": "Sync-docs Workflow",
+    "description": "Update Wiki and devonfw guide - CI workflow template",
     "iconName": "Logo_devonfw",
     "categories": [
         "asciidoc"
