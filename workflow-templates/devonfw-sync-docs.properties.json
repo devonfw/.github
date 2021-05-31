@@ -1,6 +1,6 @@
 {
     "name": "Sync-docs Workflow",
-    "description": "Update Wiki and devonfw guide - CI workflow template",
+    "description": "Update the GitHub Repo wiki and the devonfw guide+website by your asciidoc sources from documentation/ folder on the master branch",
     "iconName": "Logo_devonfw",
     "categories": [
         "asciidoc"
