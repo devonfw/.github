@@ -1,6 +1,6 @@
 {
-    "name": "Sync-docs Workflow",
-    "description": "Update the GitHub Repo wiki and the devonfw guide+website by your asciidoc sources from documentation/ folder on the master branch",
+    "name": "Publishes the documents",
+    "description": "Publishes the documents to wiki and triggers devonfw guide and website to update by using the ascidoc files from the documentation/ directory",
     "iconName": "Logo_devonfw",
     "categories": [
         "asciidoc"
