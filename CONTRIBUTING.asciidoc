@@ -80,7 +80,7 @@ Please note that for trivial changes like a typo in the documentation you do not
 For non-trivial changes please read on.
 
 === Issues
-We are working issue-based, so check if there is already an issue in our tracker for the task you want to work.
+We are working issue-based, so check if there is already an issue in our tracker for the task you want to work on.
 Otherwise first create a new issue for it (e.g. a bug report or a feature request).
 
 If you want to contribute actively to resolve the issue (by providing code, documentation, etc.),
