@@ -26,10 +26,16 @@ Now that you are logged into GitHub you are ready to go.
 === Organizations
 For devonfw we have the following organizations on GitHub:
 
-* link:https://github.com/devonfw/[*devonfw*]
+* https://github.com/devonfw/[*devonfw*]
 +
 The official _devonfw Platform_ organization.
-* link:https://github.com/devonfw-forge[*devonfw-forge*]
+* https://github.com/devonfw-sample[*devonfw-sample*]
++
+The organization used for sample and demo repositories. Here you can find things working in action that can give you a jumpstart. We do not claim every sample to be up-to-date. However, it needs to build and run out-of-the-box without errors.
+* https://github.com/devonfw-training[*devonfw-training*]
++
+The organization used as a starting point for trainings about devonfw. We do not claim the repositories to be self-explanatory. In case you need to participate into a training please contact us.
+* https://github.com/devonfw-forge[*devonfw-forge*]
 +
 The organization used for work on incubators and other research projects.
 New projects start here and in case they evolve properly and get mature, they are moved to the official devonfw organization.
