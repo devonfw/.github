@@ -1733,3 +1733,11 @@ scm
 SVG
 scm
 CRs
+SonarJava
+DevonArchitectureRules
+DevonScopeRules
+gui
+imagemanagement
+sampleapp
+samplecomponent
+usermanagement
