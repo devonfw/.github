@@ -1,0 +1,48 @@
+:toc: macro
+toc::[]
+:idprefix:
+:idseparator: -
+
+= Definition Of Done
+
+A user story is considered Done in the sprint if the below conditions are met:
+
+. Implementation of task following guidelines
+  *  Follow coding convention and standard guidelines to complete your task implementation. Check out link:https://github.com/ssarmokadam/.github/blob/master/CONTRIBUTING.asciidoc[here]
+  * TODO - Check if automation is possible
+.  Add unit test cases
+   You should add unit test cases or integration tests (if required) for your topic. Unit/integration test should pass.
+    *  Enhancements require unit test cases to be added. 
+    *  Bug fixes existing unit test cases needs to be updated. 
+. Build success on local
+  * Build on local should pass without any errors.
+. Create/modify documentation 
+  * Follow documentation guideline and add/modify documentation for your topic.
+. Raise Pull Request for changes done 
+  * Check for PR guidelines as detailed in point 6. a. 
+  * If you are contributing in devonfw for first time please take a look at contribution guidelines available at https://github.com/devonfw/.github/blob/master/CONTRIBUTING.asciidoc
+. Pull Request is reviewed and merged
+  * Points to be checked in the review +
+      1. Followed coding convention while implementation. For devon4j you can find details link:https://github.com/devonfw/devon4j/blob/master/documentation/coding-conventions.asciidoc[here] +
+2. If working on devon4j, add javadocs wherever necessary +
+      3. Added unit tests +
+      4. Build is successful +
+format the code and pass local linter (check for indentation ,clean your code. Remove unnecessary blank lines )
+      5. Removed the warnings +
+      6. Removed unnecessary comments and do not mention author name etc +
+      7. A reference to a related issue (mention Github issue number in PR name) in your repository while raising PR +
+      8. Add or modify documentation for topic +
+  * The code should be reviewed by one or more people with a similar competence. If there are any review comments incorporate those changes. Once this is complete reviewer can merge PR. At least 2 rounds of peer review are recommended.
+. Peer test
+  * Technical implementation and documentation are peer tested
+  * Take screen shots and add it to the JIRA story.
+. Create tutorial/videos
+  * If required, add a tasks for YouTube/katacoda tutorials for topic.
+
+[options="header,footer"]
+|=======================
+|Accountability|Responsibility
+|Peer reviewer |	Developer 
+|=======================
+
+

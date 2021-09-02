@@ -26,10 +26,16 @@ Now that you are logged into GitHub you are ready to go.
 === Organizations
 For devonfw we have the following organizations on GitHub:
 
-* link:https://github.com/devonfw/[*devonfw*]
+* https://github.com/devonfw/[*devonfw*]
 +
 The official _devonfw Platform_ organization.
-* link:https://github.com/devonfw-forge[*devonfw-forge*]
+* https://github.com/devonfw-sample[*devonfw-sample*]
++
+The organization used for sample and demo repositories. Here you can find things working in action that can give you a jumpstart. We do not claim every sample to be up-to-date. However, it needs to build and run out-of-the-box without errors.
+* https://github.com/devonfw-training[*devonfw-training*]
++
+The organization used as a starting point for trainings about devonfw. We do not claim the repositories to be self-explanatory. In case you need to attend a training please contact us.
+* https://github.com/devonfw-forge[*devonfw-forge*]
 +
 The organization used for work on incubators and other research projects.
 New projects start here and in case they evolve properly and get mature, they are moved to the official devonfw organization.
@@ -74,7 +80,7 @@ Please note that for trivial changes like a typo in the documentation you do not
 For non-trivial changes please read on.
 
 === Issues
-We are working issue-based, so check if there is already an issue in our tracker for the task you want to work.
+We are working issue-based, so check if there is already an issue in our tracker for the task you want to work on.
 Otherwise first create a new issue for it (e.g. a bug report or a feature request).
 
 If you want to contribute actively to resolve the issue (by providing code, documentation, etc.),
@@ -123,6 +129,9 @@ Before you start with your documentation changes, please check the following con
 * All documentation files need to carry the `.asciidoc` extension and should be named in `lower-train-case` style.
 * Common prefixes help to categorize documentation files: `tutorial-` is used for step-by-step instructions, `guide-` is used for guidelines on a particular aspect, `coding-` is for specific conventions or details about source-code, `alternative-` is for less official options that are not recommended but to still offer knowledge for people using that option, `decision-` is for rationales why a complex (technology) decision was made.
 * Please read and follow our https://github.com/devonfw/docgen/#guidelines[documentation guidelines].
+
+[.internal]
+contributing-internal-snippets
 
 === Testing Changes
 To test your changes all you need to do is run the following command:
