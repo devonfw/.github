@@ -1,4 +1,7 @@
 STOs
+MrChecker
+speaky
+transpilation
 someAttributeName
 unmarshall
 RequestMethod
@@ -12,6 +15,7 @@ DLLs
 DenyAll
 lego
 xml
+transpiler
 AnyConnect
 AllowAnonymous
 HttpStatusCode
