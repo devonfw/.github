@@ -17,7 +17,6 @@ JSR
 Balancer
 cdk
 Subclasses
-IServiceCollection
 util
 JTA
 ifdef
@@ -47,7 +46,6 @@ CVEs
 QueryDSL's
 ngif
 JWT
-yourOpenAPIFile
 Aes
 lombok
 autoruns
@@ -70,9 +68,6 @@ WSL
 pdf
 OCI
 iCSD
-imCTsq
-SpringDataJPAProcessor
-ordet
 executables
 FRP
 Javadoc
@@ -1206,3 +1201,30 @@ jre
 propertymerge
 autocompletion
 Chocolatey
+
+FreeMarker
+JSON
+JUnit 
+Ionic
+IONIC
+JAXB 
+XML
+POM
+OpenApi
+JSON
+TS
+TypeScript
+POC
+IDE
+CMD
+SQL
+REST
+TCP
+URL
+csrf
+CSRF
+CLI
+SOAP
+WSDL
+EXT JS
+HowTo's
