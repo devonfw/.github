@@ -1206,7 +1206,6 @@ FreeMarker
 JSON
 JUnit 
 Ionic
-IONIC
 JAXB 
 XML
 POM
@@ -1221,7 +1220,6 @@ SQL
 REST
 TCP
 URL
-csrf
 CSRF
 CLI
 SOAP
