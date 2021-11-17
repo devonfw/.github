@@ -43,7 +43,6 @@ MSDN
 cobiGen
 SCSS
 CVEs
-QueryDSL's
 ngif
 JWT
 Aes
@@ -65,7 +64,6 @@ NetJWTController
 Openshift
 throwables
 WSL
-pdf
 OCI
 iCSD
 executables
@@ -1225,4 +1223,5 @@ CLI
 SOAP
 WSDL
 EXT JS
-HowTo's
+HowTo
+PDF
