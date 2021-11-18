@@ -323,7 +323,6 @@ ILoginService
 Teradata
 Sysinternals
 JWTLoginFilter
-HTTPs
 Cobertura
 XUnit
 bugfix
@@ -1225,7 +1224,6 @@ WSDL
 EXT JS
 HowTo
 PDF
-https
 JUnit
 AsciiDoc
 JavaDoc
