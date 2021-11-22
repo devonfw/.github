@@ -1242,4 +1242,6 @@ getter
 methodAccessibleField's
 io
 Nexsus
-js
+JS
+.gitignore
+jenkinsfile
