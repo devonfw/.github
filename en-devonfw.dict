@@ -1070,7 +1070,6 @@ uml
 xmi
 xmlmerge
 xmlplugin
-xpath
 Unselecting
 javaplugin
 unselected
@@ -1254,5 +1253,5 @@ ConEmu
 StartExplorer
 WebStorm
 CRUD
-xpath
+XPath
 API
