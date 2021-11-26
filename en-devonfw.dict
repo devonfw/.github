@@ -25,7 +25,6 @@ BDD
 iconfont
 toplevel
 balancer
-typeorm
 jpeg
 hana
 mssql
@@ -331,7 +330,6 @@ CLI
 tradename
 devon
 hardwire
-Typeorm
 BuildOASP
 CMD
 Keycloak
@@ -410,6 +408,7 @@ eslintrc
 IISIntegration
 findbugs
 CVE
+whitespace
 whitespaces
 LHS
 YYYYMMDD
@@ -1071,7 +1070,6 @@ uml
 xmi
 xmlmerge
 xmlplugin
-xpath
 Unselecting
 javaplugin
 unselected
@@ -1241,6 +1239,8 @@ JavaClass
 getter
 methodAccessibleField's
 io
+CockroachDB
+js
 Nexsus
 JS
 gitignore
@@ -1252,10 +1252,25 @@ PowerToys
 ConEmu
 StartExplorer
 WebStorm
+spellcheck
 AuthService
 HttpClient
 nKaaS
 FRONTEND
 ChromeHeadless
 Traefik
-
+PowerShell
+ZenHub
+JEE
+Zsh
+iTerm
+macOS
+SmartMove
+dpkg
+CRUD
+XPath
+API
+AnyConnect
+EventViewer
+args
+master
