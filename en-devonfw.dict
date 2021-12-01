@@ -194,7 +194,7 @@ const
 subpath
 jdbc
 ORM
-jumpthequeue
+JumpTheQueue
 ETOs
 junit
 OSI
@@ -404,7 +404,7 @@ configfile
 jPackage
 eslintrc
 IISIntegration
-findbugs
+FindBugs
 CVE
 whitespace
 whitespaces
@@ -904,7 +904,7 @@ marshalling
 SPDX
 FZ
 oasp
-checkstyle
+CheckStyle
 localhost
 POJO
 ESLint
@@ -1365,5 +1365,8 @@ veggy
 analytics
 MyThaiStarTest
 mins
+SonarLint
+startSonar
+EE
 
 
