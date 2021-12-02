@@ -1388,8 +1388,6 @@ Protobuf
 Serilog
 TODOs
 AndHttp
-WebListener
-HttpProtocol
 MSAccess
 InMemory
 SqlServer
