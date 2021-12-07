@@ -12,7 +12,6 @@ Angular's
 Ansible
 AnyConnect
 Appium
-ApplicationUser
 AsciiDoc
 AspectJ
 Async
@@ -47,7 +46,7 @@ CVEs
 CXF
 CamelCase
 Capgemini
-Ceritificate
+Certificate
 Changelog
 Charset
 CheckStyle
@@ -88,7 +87,6 @@ Dao
 Decrypt
 Deserialization
 Destructors
-DevOPS
 DevOps
 Devonfw
 Dialogs
@@ -135,7 +133,7 @@ GMailAPIConsumer
 GPL
 Generis
 GitLab
-Github
+GitHub
 Gradle
 GraphQL
 Graylog
@@ -147,7 +145,7 @@ HTML
 HTTPS
 HXEHana
 HammerJs
-Healtcheck
+Healthcheck
 HowTo
 HowTo's
 Http
@@ -255,9 +253,9 @@ Modularization
 Moq
 MrChecker
 MrChecker’s
-MySql
 MyThaiStar
 MyThaiStar's
+MySQL
 MyWS
 NLS
 NPE
@@ -266,7 +264,7 @@ NUnit
 Nano
 NestJS
 NetAPI
-Nexsus
+Nexus
 NgRx
 Nginx
 NoSQL
@@ -320,7 +318,7 @@ Postgres
 PowerShell
 PowerToys
 Prebuilt
-Prerequisities
+Prerequisites
 PrimeNG
 Protobuf
 Quarkus
@@ -438,8 +436,6 @@ WSDL
 WSL
 WTP
 WebAIM
-WebAPI
-WebApi
 WebServices
 WebSocket
 WebStorm
@@ -475,13 +471,11 @@ Zuul
 accessors
 adoptopenjdk
 advices
-alertdialog
 allpackages
 alphanumeric
 analyse
 analytics
 anch
-angularcli
 anyedit
 aop
 apache
@@ -546,7 +540,6 @@ cancelling
 capgemini
 catched
 cd
-cdk
 cfg
 cghome
 cglib
@@ -606,7 +599,7 @@ datetime
 decrypt
 defacto
 denvonfw
-dependecies
+dependencies
 deployable
 desc
 deserialization
@@ -623,7 +616,6 @@ diag
 dialogs
 digged
 discoverable
-dishmanagement
 distributable
 dll
 dockerfile
@@ -742,7 +734,7 @@ init
 injectable
 inofficial
 inputreader
-instace
+instance
 installable
 instanceof
 instantiable
@@ -870,10 +862,6 @@ mucevolve
 multibranch
 multilicensing
 mvc
-mvn
-mvnw
-mycomponent
-mysql
 mythaistar
 mythaistarrestaurant
 mywebserver
@@ -1171,7 +1159,6 @@ xamarin
 xls
 xlsx
 xmi
-xmlns
 xmlns
 xpaas
 xs
