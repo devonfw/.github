@@ -597,8 +597,7 @@ datasources
 datatypes
 datetime
 decrypt
-defacto
-denvonfw
+devonfw
 dependencies
 deployable
 desc
@@ -732,9 +731,7 @@ impl
 incrementing
 init
 injectable
-inofficial
 inputreader
-instance
 installable
 instanceof
 instantiable
@@ -860,9 +857,6 @@ mucevolve
 multibranch
 multilicensing
 mvc
-mythaistar
-mythaistarrestaurant
-mywebserver
 nKaaS
 nameplugin
 namespace
