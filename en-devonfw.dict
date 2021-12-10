@@ -24,8 +24,8 @@ Arquillian
 asc
 ASCII
 AsciiDoc
-AspectJ
 ASP
+AspectJ
 AST
 Auth
 Authenticator
@@ -124,6 +124,7 @@ Destructors
 deterministically
 dev
 devcon
+devon
 devonfw
 devonfw's
 DevOps
@@ -213,8 +214,8 @@ healthcheck
 HHmmSS
 HK
 hostname
-hotspot
 HotSpot
+hotspot
 HowTo
 HowTo's
 HSQLDB
@@ -228,6 +229,7 @@ HXEHana
 hxehost
 Hystrix
 IAM
+iconfont
 iCSD
 IDE
 IDEenv
@@ -386,8 +388,8 @@ nameplugin
 namespace
 namespaces
 namespacing
-nav
 Nano
+nav
 nbsp
 neighbour
 NestJS
@@ -562,6 +564,7 @@ StartExplorer
 Stateful
 STO
 STOs
+stylesdir
 sudo
 superclass
 superclass's
@@ -586,6 +589,7 @@ Throwable
 Throwables
 TLS
 tmp
+toc
 TODO
 TODOs
 Togglz
@@ -679,12 +683,13 @@ xls
 xlsx
 XMI
 XML
+xml
 XMLMerge
 XMLPlugin
 XMLUtil
 Xms
 Xmx
-xPaaS 
+xPaaS
 XPath
 XSD
 XSS
