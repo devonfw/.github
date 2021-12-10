@@ -79,6 +79,7 @@ CobiGen's
 CockroachDB
 codebase
 codelyzer
+Cognito
 Commandlet
 Commandlets
 ConEmu
@@ -111,6 +112,7 @@ Cygwin
 DAO
 DAOs
 DAO'S
+DB
 DBA
 DBAs
 DDL
@@ -213,6 +215,7 @@ HHmmSS
 HK
 hostname
 hotspot
+HotSpot
 HowTo
 HowTo's
 HSQLDB
@@ -326,6 +329,7 @@ Liquibase
 listbox's
 LiteDB
 LOC
+Lodash
 Logback
 Logstash
 Lombok
@@ -383,6 +387,7 @@ nameplugin
 namespace
 namespaces
 namespacing
+nav
 Nano
 nbsp
 neighbour
@@ -419,6 +424,7 @@ OpenID
 OpenJDK
 OpenShift
 OpenVPN
+OpenWhisk
 Optionals
 OracleJDK
 orchestrator
@@ -588,6 +594,7 @@ toolchain
 tooltip
 tooltips
 Topbar
+TortoiseGit
 TOs
 TOTP
 TO's
