@@ -128,7 +128,6 @@ devonfw's
 DevOps
 devstyle
 devtools
-diag
 Dialogs
 dialogs
 digged
@@ -136,7 +135,6 @@ discoverable
 distributable
 dll
 DLLs
-dloader
 Dockerfile
 Dockerfiles
 doclet
@@ -161,7 +159,6 @@ EJB
 Embeddable
 encodings
 encryptor
-endif
 enforceability
 Enum
 Enums
@@ -357,7 +354,6 @@ middleware
 mins
 Misconfiguration
 misconfiguring
-mkdir
 mmm
 Mochawesome
 Mockito
@@ -417,7 +413,6 @@ Observables
 OCI
 OLTP
 OmniSharp
-onboarding
 OOP
 OpenAPI
 OpenID
@@ -486,14 +481,8 @@ Quotemarks
 RBAC
 RDBMS
 README
-redelivery
 Redux
 regexutil
-regionalise
-regionalised
-reimplement
-relink
-relinking
 renamer
 repo
 repos
@@ -562,7 +551,6 @@ SpotBugs
 SQL
 SQLite
 SqlServer
-src
 SSL
 stacktrace
 StartExplorer
@@ -609,7 +597,6 @@ transloco
 transpilation
 transpiled
 transpiler
-troutbleshoot
 TS
 TSLint
 txt
