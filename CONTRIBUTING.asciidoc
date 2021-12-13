@@ -191,7 +191,7 @@ Your pull request will automatically be checked for these requirements:
 
 * Can be merged without conflicts.
 * Builds correctly (no compile or test errors).
-* https://github.com/devonfw-forge/devon-guide/wiki/cookbook-cla[CLA] has been signed. If you contribute for the first time, you need to https://github.com/devonfw-forge/devon-guide/wiki/cookbook-cla[sign the CLA] once.
+* https://cla-assistant.io/devonfw/architectures[CLA] has been signed. If you contribute for the first time, you need to https://cla-assistant.io/devonfw/architectures[sign the CLA] once.
 
 Please ensure to do the required tasks and reworks unless all checks are satisfied.
 From here a reviewer should take over and give feedback.
