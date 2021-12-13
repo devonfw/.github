@@ -1,6 +1,9 @@
 name: spellcheck 
 on:
   workflow_call:
+    secrets:
+      RESUSABLE_GH_ACTION_TOKEN:
+        required: true
 jobs:
   build:
     runs-on: ubuntu-latest
