@@ -13,5 +13,8 @@ jobs:
      - name: download spellcheck config file
        run: |
         wget https://raw.githubusercontent.com/devonfw/.github/master/.github/workflows/.spellcheck.yml -O ./.spellcheck.yml
+     - name: download dictionary
+       run: |
+        wget https://raw.githubusercontent.com/devonfw/.github/master/en-devonfw.dict -O ./en-devonfw.dict
      - uses: igsekor/pyspelling-any@v0.0.2
        name: Spellcheck
