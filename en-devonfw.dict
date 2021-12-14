@@ -17,6 +17,7 @@ Appender
 Appenders
 Appium
 Arabic
+arabic
 arg
 argfile
 args
@@ -235,6 +236,8 @@ IDE
 IDEenv
 IDEs
 IDE's
+idprefix
+idseparator
 ifdef
 IIS
 Immer
@@ -396,6 +399,7 @@ NestJS
 nestjsx
 Netflix
 Nexus
+ng
 Nginx
 NgRx
 ngsw
@@ -473,6 +477,7 @@ PowerShell
 PowerToys
 pre
 PrimeNG
+programmatically
 protocolled
 proxied
 psuedo
@@ -580,6 +585,7 @@ TBD
 TCP
 TCPView
 Teardown
+tempeng
 templating
 Teradata
 Teradata's
