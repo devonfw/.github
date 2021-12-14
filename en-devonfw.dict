@@ -162,6 +162,7 @@ EJB
 Embeddable
 encodings
 encryptor
+endif
 enforceability
 Enum
 Enums
@@ -192,6 +193,7 @@ Generics
 geolocation
 getter
 getters
+github
 GitHub
 gitignore
 GitLab
@@ -222,6 +224,7 @@ HowTo's
 HSQLDB
 HTML
 Http
+HTTP
 HttpClient
 HTTPS
 hxe
@@ -294,6 +297,7 @@ JRE
 JREs
 JS
 JSF
+json
 JSON
 jsoup
 JSP
@@ -417,8 +421,10 @@ NuGet
 Nullable
 NUnit
 nx
+oasp
 OASP
 OAuth
+observables
 Observables
 OCI
 OLTP
@@ -534,6 +540,7 @@ Serializable
 Serializer
 serializers
 Serilog
+serverless
 Serverless
 ServicedocGen
 servlet
@@ -678,6 +685,7 @@ Winston
 wireframe
 wireframes
 WireMock
+workspaces
 WSDL
 WSL
 Xamarin
