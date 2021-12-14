@@ -10,5 +10,8 @@ jobs:
     steps:
      - name: spellcheck checkout
        uses: actions/checkout@v2
+     - name: download spellcheck config file
+       run: |
+        wget https://raw.githubusercontent.com/devonfw/.github/master/.github/workflows/.spellcheck.yml -O ./.spellcheck.yml
      - uses: igsekor/pyspelling-any@v0.0.2
        name: Spellcheck
