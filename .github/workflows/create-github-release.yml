@@ -1,0 +1,25 @@
+name: Create GitHub Release
+
+on:
+  workflow_call:
+    secrets:
+      GHA_TOKEN:
+        required: true
+    inputs:
+      TAG_NAME:
+        description: The tag name to create a release for. Will be also the name of the release.
+        type: string
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Create Release
+        uses: ncipollo/release-action@v1.9.0
+        with:
+          generateReleaseNotes: true
+          tag: ${{ inputs.TAG_NAME }}
+          token: ${{ secrets.GHA_TOKEN }}
