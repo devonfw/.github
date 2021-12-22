@@ -23,3 +23,11 @@ jobs:
           generateReleaseNotes: true
           tag: ${{ inputs.TAG_NAME }}
           token: ${{ secrets.GHA_TOKEN }}
+          
+      - name: Close Milestone with Release Name
+        uses: adlerhsieh/prepare-release@0.1.2
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GHA_TOKEN }}
+          REPO_OWNER: ${{ github.event.repository.owner }}
+          REPO: ${{ github.event.repository.name }}
+          IGNORE_MILESTONE_NOT_FOUND: true
