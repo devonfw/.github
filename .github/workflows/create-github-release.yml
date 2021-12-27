@@ -5,9 +5,15 @@ on:
     secrets:
       GHA_TOKEN:
         required: true
+    inputs:
+      RELEASE_STATUS:
+        description: The status of the release (outcome of the release job).
+        type: string
+        required: true
 
 jobs:
-  build:
+  github-release:
+    if: $RELEASE_STATUS == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -50,7 +56,7 @@ jobs:
             NEW_VERSION="$VERSION_PREFIX$NEW_PATCH"
             ::set-output "name=NEW_VERSION::$NEW_VERSION"
           fi
-      
+
       - name: 'Create new milestone'
         id: createmilestone
         uses: "WyriHaximus/github-action-create-milestone@v1"
