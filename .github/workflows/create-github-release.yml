@@ -13,7 +13,7 @@ on:
 
 jobs:
   github-release:
-    if: ${{ env.RELEASE_STATUS == 'success' }}
+    if: env.RELEASE_STATUS == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
