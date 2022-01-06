@@ -1,0 +1,67 @@
+:toc: macro
+toc::[]
+:idprefix:
+:idseparator: -
+ifdef::env-github[]
+:note-caption: :information_source:
+endif::[]
+
+= Spellcheck
+
+== What is Spellcheck and how it is configured?
+
+Spellcheck is setup in each repository to automatically detect mispelled words in documents of respective repository.We are using PySpelling module for automatic spellcheck. Basic usage can be found https://facelessuser.github.io/pyspelling/[here].PySpell github repository can be found https://github.com/igsekor/pyspelling-any[here].
+`devonfw-spellcheck.yml` setup this workflow for each respective repository.It reuses common workflow from .github repository. 
+
+Spellcheck workflow has 2 parts: 
+
+* Configuration
+* Dictionary
+
+=== Configuration 
+
+https://github.com/devonfw/.github/blob/master/.github/workflows/.spellcheck.yml[Configuration file] from .github contains all configuration for spellcheck workflow. 
+
+In configuration file you can configure folder path, file type to be scanned as well as filters to ignore some format of text. Currently, spellcheck is following en_US as configured in this file.
+
+=== Dictionary
+
+Spellcheck has option to add your customized spellings which you think are correct but detected as mistakes in spellcheck report. 
+
+You can add technical terms or nouns detected as spell mistake. For example you can add names like FreeMarker or Angular etc. Also you can add standard terms like localhost, IDE etc. 
+You can find dictionary file https://github.com/devonfw/.github/blob/master/en-devonfw.dict[here].
+
+== How to fix your workflow?
+
+After you have understood how spellcheck is configured lets see how we can fix failing workflow:
+
+* **NOTE** : Spellcheck is following en_US. Do not change this setting. It will affect setting in all repositories causing workflow to fail.
+* Check for actual misspelled words and fix it in the document.
+* Check if any unnecessary special character is present in file and remove it. 
+* Put your single line command in backticks like 
+[source]
+----
+`command`
+----
+* If you have multiline command put it in triple backticks like below
+[source]
+----
+``` command ```
+----
+
+or
+
+put it in format like
+```
+[source]
+----
+command
+----
+```
+
+Be careful if you have nested backticks. Make sure you have formatted it correctly.
+
+* By default urls starting with http or https is ignored. Also dictionary path is ignored. But in case you find out some path like /sample/text etc is not ignore put it into backticks. You can find out more by looking at configuration file https://github.com/devonfw/.github/blob/master/.github/workflows/.spellcheck.yml what is ignored in spellcheck.
+* https://github.com/devonfw/.github/blob/master/en-devonfw.dict[Dictionary file] is a common repository used by spellchecker. Check if your word already exists for example you have url in your document but if you check in dictionary it will be URL all in uppercase letter. Please follow dictionary standard and change your word from url to URL.
+If you want to add any word to dictionary add its official word for example. `FreeMarker` can be written like `FreeMarker` or `freemarker` etc. But as official word is `FreeMarker`, we should not add all lowercase word freemarker to dictionary but only use FreeMarker in camel case.
+
