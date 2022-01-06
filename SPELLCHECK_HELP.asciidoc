@@ -35,7 +35,9 @@ You can find dictionary file https://github.com/devonfw/.github/blob/master/en-d
 
 After you have understood how spellcheck is configured lets see how we can fix failing workflow:
 
+* **NOTE** : Spellcheck is following en_US. Do not change this setting. It will affect setting in all repositories causing workflow to fail.
 * Check for actual misspelled words and fix it in the document.
+* Check if any unnecessary special character is present in file and remove it. 
 * Put your single line command in backticks like 
 [source]
 ----
