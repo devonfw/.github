@@ -128,6 +128,7 @@ Before you start with your documentation changes, please check the following con
 * All our documentation is written in the http://asciidoc.org/[AsciiDoc] format.
 * All documentation files need to carry the `.asciidoc` extension and should be named in `lower-train-case` style.
 * Common prefixes help to categorize documentation files: `tutorial-` is used for step-by-step instructions, `guide-` is used for guidelines on a particular aspect, `coding-` is for specific conventions or details about source-code, `alternative-` is for less official options that are not recommended but to still offer knowledge for people using that option, `decision-` is for rationales why a complex (technology) decision was made.
+* For automatic spellcheck we have integrated PySpelling in repositories. In case you have failure for spellcheck you can refer document  https://github.com/devonfw/.github/blob/master/SPELLCHECK_HELP.asciidoc[here]
 * Please read and follow our https://github.com/devonfw/docgen/#guidelines[documentation guidelines].
 
 [.internal]
