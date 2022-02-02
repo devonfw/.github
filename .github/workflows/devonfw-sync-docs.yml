@@ -6,6 +6,7 @@ on:
 name: Sync Docs
 jobs:
   update-wiki:
+    if: ${{ startsWith(github.repository, 'devonfw/') }}
     runs-on: ubuntu-latest
     steps:
       - name: setup variables
