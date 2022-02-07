@@ -2,13 +2,7 @@ on:
   workflow_call:
     secrets:
       RESUSABLE_GH_ACTION_TOKEN:
-        required: true
-      RESUSABLE_BUILD_USER:
-        required: true
-      RESUSABLE_BUILD_USER_PASSWD:
-        required: true
-      RESUSABLE_BUILD_USER_EMAIL:
-        required: true        
+        required: true    
 name: Sync Docs
 jobs:
   update-wiki:
@@ -17,6 +11,7 @@ jobs:
     steps:
       - name: setup variables
         run: |
+          echo "REPO_CONSOLIDATE='devonfw-guide'" >> $GITHUB_ENV
           echo "ORG=$(echo '${{ github.repository }}' | awk -F '/' '{print $1}')" >> $GITHUB_ENV
           echo "REPO_SOURCE=$(echo '${{ github.repository }}' | awk -F '/' '{print $2}')" >> $GITHUB_ENV
           echo "REPO_DEST=$(echo '${{ github.repository }}' | awk -F '/' '{print $2}').wiki" >> $GITHUB_ENV
@@ -25,8 +20,8 @@ jobs:
         run: git clone https://github.com/${ORG}/${REPO_SOURCE}.git ${REPO_SOURCE}
       - name: Checkout ${REPO_DEST} Repository
         run: git clone https://github.com/${ORG}/${REPO_DEST}.git ${REPO_DEST}
-      - name: Checkout devonfw-guide Repository
-        run: git clone https://github.com/${ORG}/devonfw-guide.git devonfw-guide
+      - name: Checkout ${REPO_CONSOLIDATE} Repository
+        run: git clone https://github.com/${ORG}/${REPO_CONSOLIDATE}.git ${REPO_CONSOLIDATE}
       - name: Copy docs and consolidate links
         run: |
           cp -rf ${REPO_SOURCE}/documentation/* ${REPO_DEST}/
@@ -44,8 +39,8 @@ jobs:
       - name: setup git user
         if: ${{ env.TO_BE_CANCELLED == 'false' }}
         run: |
-          git config --global user.email ${{secrets.RESUSABLE_BUILD_USER_EMAIL}}
-          git config --global user.name ${{secrets.RESUSABLE_BUILD_USER}}
+          git config --global user.email ${{secrets.BUILD_USER_EMAIL}}
+          git config --global user.name ${{secrets.BUILD_USER}}
       - name: Sync Wiki
         if: ${{ env.TO_BE_CANCELLED == 'false' }}
         run: |
@@ -53,12 +48,12 @@ jobs:
           git status
           git add .
           git commit -m "${REPO_SOURCE} documentation | GitHub Actions $GITHUB_WORKFLOW $GITHUB_RUN_NUMBER"
-          git remote add origin-wiki "https://${{secrets.RESUSABLE_BUILD_USER}}:${{secrets.RESUSABLE_BUILD_USER_PASSWD}}@github.com/${ORG}/${REPO_DEST}.git"
+          git remote add origin-wiki "https://${{secrets.BUILD_USER}}:${{secrets.BUILD_USER_PASSWD}}@github.com/${ORG}/${REPO_DEST}.git"
           git push origin-wiki master
       - name: Sync devonfw guide
         if: ${{ env.TO_BE_CANCELLED == 'false' }}
         run: |
-          cd devonfw-guide
+          cd ${REPO_CONSOLIDATE}
           if [ ! -d ${REPO_DEST} ]; then git submodule add https://github.com/${ORG}/${REPO_DEST}.git; fi;
           git submodule init
           git submodule update --recursive --remote
@@ -68,7 +63,7 @@ jobs:
           cd ..
           git add .
           git commit -m "${REPO_SOURCE} documentation | GitHub Actions $GITHUB_WORKFLOW $GITHUB_RUN_NUMBER"
-          git remote add origin-wiki "https://${{secrets.RESUSABLE_BUILD_USER}}:${{secrets.RESUSABLE_BUILD_USER_PASSWD}}@github.com/${ORG}/devonfw-guide.git"
+          git remote add origin-wiki "https://${{secrets.BUILD_USER}}:${{secrets.BUILD_USER_PASSWD}}@github.com/${ORG}/${REPO_CONSOLIDATE}.git"
           git push origin-wiki master
       - name: Trigger Update devonfw-guide on success
         uses: peter-evans/repository-dispatch@v1
