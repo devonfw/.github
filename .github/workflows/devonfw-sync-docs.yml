@@ -26,7 +26,7 @@ jobs:
       - name: Checkout ${REPO_DEST} Repository
         run: git clone https://github.com/${ORG}/${REPO_DEST}.git ${REPO_DEST}
       - name: Checkout ${REPO_CONSOLIDATE} Repository
-        run: git clone https://github.com/${ORG}/${REPO_CONSOLIDATE}.git ${REPO_CONSOLIDATE}
+        run: git clone https://${{secrets.RESUSABLE_BUILD_USER}}:${{secrets.RESUSABLE_BUILD_USER_PASSWD}}@github.com/${ORG}/${REPO_CONSOLIDATE}.git ${REPO_CONSOLIDATE}
       - name: Copy docs and consolidate links
         run: |
           cp -rf ${REPO_SOURCE}/documentation/* ${REPO_DEST}/
