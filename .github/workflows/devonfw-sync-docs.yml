@@ -25,7 +25,7 @@ jobs:
         run: git clone https://github.com/${ORG}/${REPO_SOURCE}.git ${REPO_SOURCE}
       - name: Checkout ${REPO_DEST} Repository
         run: git clone https://github.com/${ORG}/${REPO_DEST}.git ${REPO_DEST}
-      - name: Checkout ${REPO_CONSOLIDATE} Repository
+      - name: Checkout devonfw-guide Repository
         run: git clone https://github.com/${ORG}/devonfw-guide.git devonfw-guide
       - name: Copy docs and consolidate links
         run: |
@@ -58,7 +58,7 @@ jobs:
       - name: Sync devonfw guide
         if: ${{ env.TO_BE_CANCELLED == 'false' }}
         run: |
-          cd ${REPO_CONSOLIDATE}
+          cd devonfw-guide
           if [ ! -d ${REPO_DEST} ]; then git submodule add https://github.com/${ORG}/${REPO_DEST}.git; fi;
           git submodule init
           git submodule update --recursive --remote
@@ -68,7 +68,7 @@ jobs:
           cd ..
           git add .
           git commit -m "${REPO_SOURCE} documentation | GitHub Actions $GITHUB_WORKFLOW $GITHUB_RUN_NUMBER"
-          git remote add origin-wiki "https://${{secrets.RESUSABLE_BUILD_USER}}:${{secrets.RESUSABLE_BUILD_USER_PASSWD}}@github.com/${ORG}/${REPO_CONSOLIDATE}.git"
+          git remote add origin-wiki "https://${{secrets.RESUSABLE_BUILD_USER}}:${{secrets.RESUSABLE_BUILD_USER_PASSWD}}@github.com/${ORG}/devonfw-guide.git"
           git push origin-wiki master
       - name: Trigger Update devonfw-guide on success
         uses: peter-evans/repository-dispatch@v1
