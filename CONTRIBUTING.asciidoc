@@ -12,10 +12,10 @@ https://devonfw.com[devonfw] is truly free and open.
 We are looking forward to your contribution and are more than happy to receive your feedback and improvements to code and documentation.
 This page describes the few conventions to follow.
 Please note that this is an open and international project and all content has to be in English language.
-Also read our link:code-of-conduct.asciidoc[code of conduct].
+Also read our link:code-of-conduct.asciidoc[code of conduct].  
 
 == Using GitHub
-We are using GitHub as our social coding platform. Hence, we follow the principles of GitHub to deal with changes:
+We are using GitHub as our social coding platform. Hence, we follow the principles of GitHub to deal with changes. If you are  a first time contributor to GitHub projects, read https://github.com/firstcontributions/first-contributions#first-contributions[first contributions]
 
 === Account
 In case you do not have an account please first https://github.com/join[join GitHub]. 
@@ -90,29 +90,6 @@ and ensure that there is a common understanding of what and potentially even how
 You surely do not want to invest your valuable work and time into something that will later be rejected by the community.
 When you have been assigned to the issue (see `Assignees` on the right) you are sure that nobody else will work on the same issue in parallel and you are ready to go.
 
-=== Branches
-Typically the latest development takes place on the `master` branch (in case there is a `develop` branch instead, use that one).
-However, all changes are consequently done via feature-branches and pull-requests (see next sections).
-
-=== Forking
-The github.com platform supports a wonderful feature to https://help.github.com/articles/fork-a-repo/[fork a repository].
-Make use of this create your private copy where you experiment and prepare your contribution in an isolated environment:
-
-* Visit the original repository you want to contribute to.
-* Click on the `Fork` button at the top right. If asked for a destination choose your personal GitHub account.
-* Clone this fork with a git-client to your local machine.
-* Checkout the branch to use as baseline (see above section).
-* From there create and checkout a new feature branch (named `feature/«issue-id»-«feature-keywords»`)
-* Start your work on this new feature branch.
-
-Sometimes, when working on your fork, there will be changes made to the original repository, which you might want to incorporate into your fork's master branch. To do this, you can https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork[sync your fork]:
-
-* Add the remote URL of the original repo to your list of remotes: `git remote add upstream «remote-url»`
-* Fetch the changes from the upstream remote: `git fetch upstream`
-* Check out your fork's master branch: `git checkout master` (assuming you're working on a feature branch)
-* Merge the changes from upstream/master into your fork's master branch: `git merge upstream/master`
-* This brings your fork's master branch into sync with the original repository without losing changes on your local feature branch.
-* Switch back to your feature branch to continue work: `git checkout «feature-branch»`
 
 === Code Changes
 Before you start with your code changes, please check the following conventions:
@@ -159,24 +136,7 @@ Example:
 [source]
 devonfw/devon4j#1: added REST service for tablemanagement
 
-=== Pushing Changes
-To make your changes public you need to push them.
-If you are doing this for the first time since you started your feature branch, you also need to publish that branch (`git push -u origin feature/«issue-id»-«feature-keywords»`).
-After that a `git push` is sufficient.
 
-=== Definition of Done
-To complete your changes ensure the following aspects:
-
-* You have tested your changes and the build succeeds.
-* Code and documentation are in sync (if you coded new features you also extended documentation, etc.).
-* You followed the coding conventions and documentation guidelines.
-* For new features you have added automated unit tests.
-
-Do not worry; we will assist you in case you are unsure or missed out on something.
-However, you make your and our life easier, if you follow this Definition of Done (DoD) before providing your pull request.
-
-=== Pull Requests
-Once you have completed your changes and DoD, you can finally https://help.github.com/en/articles/creating-a-pull-request[create] a https://help.github.com/en/articles/about-pull-requests[pull request] (PR).
 
 Please ensure the following aspects:
 
