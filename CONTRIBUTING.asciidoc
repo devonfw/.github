@@ -12,10 +12,10 @@ https://devonfw.com[devonfw] is truly free and open.
 We are looking forward to your contribution and are more than happy to receive your feedback and improvements to code and documentation.
 This page describes the few conventions to follow.
 Please note that this is an open and international project and all content has to be in English language.
-Also read our link:code-of-conduct.asciidoc[code of conduct].  
+Also read our link:code-of-conduct.asciidoc[code of conduct].
 
 == Using GitHub
-We are using GitHub as our social coding platform. Hence, we follow the principles of GitHub to deal with changes. If you are  a first time contributor to GitHub projects, read https://github.com/firstcontributions/first-contributions#first-contributions[first contributions]
+We are using GitHub as our social coding platform. Hence, we follow the principles of GitHub to deal with changes. If you are a first time contributor to GitHub projects, read https://github.com/firstcontributions/first-contributions#first-contributions[first contributions]
 
 === Account
 In case you do not have an account please first https://github.com/join[join GitHub]. 
@@ -90,7 +90,6 @@ and ensure that there is a common understanding of what and potentially even how
 You surely do not want to invest your valuable work and time into something that will later be rejected by the community.
 When you have been assigned to the issue (see `Assignees` on the right) you are sure that nobody else will work on the same issue in parallel and you are ready to go.
 
-
 === Code Changes
 Before you start with your code changes, please check the following conventions:
 
@@ -136,7 +135,16 @@ Example:
 [source]
 devonfw/devon4j#1: added REST service for tablemanagement
 
+=== Definition of Done
+To complete your changes ensure the following aspects:
 
+* You have tested your changes and the build succeeds.
+* Code and documentation are in sync (if you coded new features you also extended documentation, etc.).
+* You followed the coding conventions and documentation guidelines.
+* For new features you have added automated unit tests.
+
+Do not worry; we will assist you in case you are unsure or missed out on something.
+However, you make your and our life easier, if you follow this Definition of Done (DoD) before providing your pull request.
 
 Please ensure the following aspects:
 
