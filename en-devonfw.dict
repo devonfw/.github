@@ -1,7 +1,10 @@
 accessors
+ACR
+acr
 AdoptOpenJDK
 AES
 alphanumeric
+amazonaws
 Analytics
 Angular's
 Ansible
@@ -35,6 +38,8 @@ autoplay
 Autowired
 Avro
 AWS
+aws
+azurecr
 backend
 Backend
 backtick
@@ -138,6 +143,7 @@ dialogs
 digged
 discoverable
 distributable
+dkr
 dll
 DLLs
 Dockerfile
@@ -159,6 +165,8 @@ dtype
 DynamoDB
 eap
 EasyQNet
+ECR
+ecr
 EE
 EJB
 Embeddable
