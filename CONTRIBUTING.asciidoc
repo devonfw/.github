@@ -17,6 +17,8 @@ Also read our link:code-of-conduct.asciidoc[code of conduct].
 == Using GitHub
 We are using GitHub as our social coding platform. Hence, we follow the principles of GitHub to deal with changes. If you are a first time contributor to GitHub projects, read https://github.com/firstcontributions/first-contributions#first-contributions[first contributions]
 
+Additionally, if you stay active and continue contributing you should also learn about https://github.com/firstcontributions/first-contributions/blob/master/additional-material/git_workflow_scenarios/keeping-your-fork-synced-with-this-repository.md[upstream merging and rebasing].
+
 === Account
 In case you do not have an account please first https://github.com/join[join GitHub]. 
 If you have a CORP username use it also as GitHub username. 
