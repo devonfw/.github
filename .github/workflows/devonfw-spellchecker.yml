@@ -19,6 +19,7 @@ jobs:
      - uses: igsekor/pyspelling-any@v0.0.2
        name: Spellcheck
      - name: Spellcheck workflow help
+       if: failure()
        run: |
-         echo "Please refer spellcheck help text file https://github.com/devonfw/.github/blob/master/SPELLCHECK_HELP.asciidoc "
+         echo -e "\033[31m Please refer spellcheck help text file https://github.com/devonfw/.github/blob/master/SPELLCHECK_HELP.asciidoc "
          echo "Do necessary steps as mentioned to fix your workflow."
