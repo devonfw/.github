@@ -9,61 +9,48 @@ matrix:
     - en-devonfw.dict
     output:  en-devonfw.dic
   pipeline:
-  #Ignore content between backticks
+  #Ignore asciidoc options and flags
   - pyspelling.filters.context: 
       context_visible_first: true
       delimiters:
-      - open: '(?<!``)`[^`]+'
+      - open: '^:'
+        close: '$'
+  #Ignore code blocks
+  - pyspelling.filters.context: 
+      context_visible_first: true
+      delimiters:
+      - open: '(?s)^```'
+        close: '^```'
+  #Ignore inline code
+  - pyspelling.filters.context: 
+      context_visible_first: true
+      delimiters:
+      - open: '(?<!``)`'
         close: '`'
-  - pyspelling.filters.context: 
-      context_visible_first: true
-      delimiters:
-      - open: '```'
-        close: '(\w|\W)+?(?=```)'
   #Ignore links
   - pyspelling.filters.context: 
       context_visible_first: true
       delimiters:
-      - open: 'link:[^[]+'
+      - open: '(link|xref):[^\[]+'
         close: '\['
   #Ignore Image tags
   - pyspelling.filters.context: 
       context_visible_first: true
       delimiters:
-      - open: 'image:[^[]+'
-        close: '\['
-  #Ignore Image tags link part
-  - pyspelling.filters.context:
-      context_visible_first: true
-      delimiters:
-      - open: ',.+?link=[^\]]+'
+      - open: '(image|include):'
         close: '\]'
-  #Ignore include tag
-  - pyspelling.filters.context: 
-      context_visible_first: true
-      delimiters:
-      - open: 'include:[^[]+'
-        close: '\['
-  - pyspelling.filters.context:
-      context_visible_first: true
-      escapes: \\[\\-~]
-      delimiters:
-      # Ignore multiline content between fences (fences can have 4 or more hyphens)
-      # ----
-      # content
-      # ----
-      - open: '(?s)^(?P<open> *-{4,})$'
-        close: '^(?P=open)$'  
+  # Ignore multiline content between [source, *] and ---- fences
   - pyspelling.filters.context:
       context_visible_first: true
       delimiters:
-      # Ignore multiline content between [source, *] and blank line
-      - open: '\[source,.*\]\r?\n\s*----'
-        close: '\s*----'
-   #Ignore for directory path
-  - pyspelling.filters.context: 
+      - open: '(?s)^(\[source(,[^\]]*)?\]$)?\s*^----+'
+        close: '^\s*----+'
+  # Ignore multiline content between [source, *] and blank line
+  - pyspelling.filters.context:
       context_visible_first: true
-      escapes: '^.*[\/\\][^\/\\]+$'
+      delimiters:
+      - open: '(?s)^\[source(,[^\]]*)?\]$'
+        close: '^\s*$'
   #Ignore for url starting with http or https
   - pyspelling.filters.context: 
       context_visible_first: true
