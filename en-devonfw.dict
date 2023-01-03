@@ -106,9 +106,7 @@ ETOs
 EasyQNet
 Embeddable
 Enum
-enum
 Enums
-enums
 ExpressJS
 FIXME
 FaaS
@@ -476,8 +474,11 @@ bugfix
 bundler
 cfg
 changelist
+changelog
 char
+charset
 cheatsheet
+checkboxes
 childnode
 cicdgen
 classloader
@@ -524,6 +525,8 @@ encryptor
 endif
 enforceability
 enum
+enum
+enums
 enums
 env
 eslintrc
