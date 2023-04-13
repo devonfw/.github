@@ -19,6 +19,7 @@ Appender
 Appenders
 Appium
 Arabic
+ArgLine
 Arquillian
 AsciiDoc
 AspectJ
@@ -38,6 +39,7 @@ CDI
 CDK
 CGLIB
 CICD
+CLA
 CLI
 CMD
 CORS
@@ -115,6 +117,7 @@ FindBugs
 FireBird
 Firefox
 Float
+Formatter
 FreeMarker
 Frontend
 GMail
@@ -358,6 +361,7 @@ SmartMove
 SoC
 SonarLint
 SonarQube
+SonaType
 Sortable
 Spain
 SpotBugs
@@ -452,11 +456,13 @@ ZenHub
 Zsh
 Zuul
 accessors
+accidential
 alphanumeric
 apk
 arabic
 arg
 argfile
+argline
 args
 asc
 autocompletion
@@ -484,6 +490,7 @@ cicdgen
 classloader
 classname
 classpath
+cobigen
 codebase
 codelyzer
 config
@@ -538,6 +545,7 @@ fasterxml
 float
 fn
 focusable
+formatter
 frontend
 frontmost
 gRPC
@@ -562,10 +570,12 @@ hxehost
 iCSD
 iTerm
 iconfont
+ide
 idprefix
 idseparator
 ifdef
 imagesdir
+indentation
 incrementing
 init
 injectable
@@ -578,6 +588,7 @@ inviters
 io
 ip
 jaxen
+jdt
 jpeg
 jpg
 json
@@ -635,6 +646,7 @@ npx
 nx
 oasp
 observables
+ongoingly
 openapi
 orchestrator
 ormconfig
@@ -687,6 +699,7 @@ showup
 sidenav
 sidenavs
 softwares
+sonatype
 sourceforge
 spoc
 stacktrace
