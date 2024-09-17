@@ -121,22 +121,23 @@ If the build failed, you need to rework your changes.
 
 === Committing Changes
 Always commit your changes in small logical units associated with an issue (see above section) using the commit message format:
-[source]
+```
 #«issue-id»: «describe your change»
+```
 Then GitHub will automatically link the commit with the issue. 
 
 Example:
-[source]
+```
 #1: added REST service for tablemanagement
-
+```
 In case you worked on an issue from a different repository (e.g. change in `ide-settings` due to issue in `ide`), we use this commit message format:
 [source]
 «organization»/«repository»#«issue-id»: «describe your change»
 
 Example:
-[source]
+```
 devonfw/devon4j#1: added REST service for tablemanagement
-
+```
 === Definition of Done
 To complete your changes ensure the following aspects:
 
